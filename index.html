@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="output-labels">
+                <div class="history"></div>
+                <div class="output">0</div> 
+            </div>
+            <div class="all-but">
+                <div class="dopol">
+                    <div class ="convert-binary col1">binary</div>
+                    <div class ="convert-decimal col1">bin-dec</div>
+                    <div class="convert-hexadecimal col1">hex</div>
+                    <div class="convert-decimal-from-hexadecimal col1">hex-dec</div>
+                    <div class ="ctg col1">ctg x</div>
+                    <div class ="tg col1">tg x</div>
+                    <div class="cos col1">cos x</div>
+                    <div class="sin col1">sin x</div>
+                    <div class="mr col1">MR</div>
+                    <div class="mc col1">MC</div>
+                    <div class="m-plus col1">M+</div>
+                    <div class="m-minus col1">M-</div>
+                    <div class ="exp col1">x^n</div>
+                    <div class ="kor col1">&#8730;x</div>
+                    <div class="fac col1">x!</div>
+                    <div class="enumb col1">e</div>
+                    <div class="pinumb col1">π</div>
+                    <div class="ln col1">ln</div>
+                    <div class="step2 col1">x^2</div>
+                    <div class="step3 col1">x^3</div>
+                </div>
+                <div class="buttons">
+                    <div class="ac col1">C</div>
+                    <div class="plusminus col1">+/-</div>
+                    <div class="percent col1">%</div>
+                    <div class="div col2">/</div>
+                    <div class="seven numb">7</div>
+                    <div class="eight numb">8</div>
+                    <div class="nine numb">9</div>
+                    <div class="multi col2">X</div>
+                    <div class="four numb">4</div>
+                    <div class="five numb">5</div>
+                    <div class="six numb">6</div>
+                    <div class="min col2">-</div>
+                    <div class="one numb">1</div>
+                    <div class="two numb">2</div>
+                    <div class="three numb">3</div>
+                    <div class="plus col2">+</div>
+                    <div class="zero numb">0</div>
+                    <div class="double-zero numb">00</div>
+                    <div class="coma numb">,</div>
+                    <div class="result col2">=</div>
+                </div>
+            </div>
+            <div class="conv">
+                <select id="from-unit-leng">
+                    <option value="mm" selected>Millimeters</option>
+                    <option value="cm">Centimeters</option>
+                    <option value="m">Meters</option>
+                    <option value="km">Kilometers</option>
+                </select>
+                
+                <select id="to-unit-leng">
+                    <option value="mm" selected>Millimeters</option>
+                    <option value="cm">Centimeters</option>
+                    <option value="m">Meters</option>
+                    <option value="km">Kilometers</option>
+                </select>
+                <button class="convert-button-leng">Convert</button>
+
+                <select id="from-unit-weig">
+                    <option value="g" selected>Grams</option>
+                    <option value="kg">Kilograms</option>
+                    <option value="t">Tonnes</option>
+                </select>
+                
+                <select id="to-unit-weig">
+                    <option value="g" selected>Grams</option>
+                    <option value="kg">Kilograms</option>
+                    <option value="t">Tonnes</option>
+                </select>
+                
+                <button class="convert-button-weig">Convert</button>
+
+                <select id="from-unit-area">
+                    <option value="cm2" selected>Square Centimeters</option>
+                    <option value="m2">Square Meters</option>
+                    <option value="km2">Square Kilometers</option>
+                    <option value="ha">Hectares</option>
+                </select>
+                
+                <select id="to-unit-area">
+                    <option value="cm2" selected>Square Centimeters</option>
+                    <option value="m2">Square Meters</option>
+                    <option value="km2">Square Kilometers</option>
+                    <option value="ha">Hectares</option>
+                </select>
+                
+                <button class="convert-button-area">Convert</button>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
