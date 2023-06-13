@@ -34,7 +34,13 @@ This calculator works with simple operator, but as well it can:
 
 ## Screenshots
 
+| First look | Calculation |
+| :---: |  :---: |
 | <img src="https://i.imgur.com/6EuT4XQ.png">  | <img src="https://i.imgur.com/jwitdBh.png">|
+
+
+| Memory | Float numbers |
+| :---: |  :---: |
 | <img src="https://i.imgur.com/KPldgRA.png">  | <img src="https://i.imgur.com/7QpUTxo.png">|
 
 ## Features
