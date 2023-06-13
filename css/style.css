@@ -1,8 +1,11 @@
 body {
     transform: scale(0.75);
     margin-top: -75px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: antiquewhite;
 }
 
+/* Main DIVS*/
 .dopol {
     display: grid;
     justify-content: center;
@@ -25,111 +28,107 @@ body {
     "zero double-zero coma result";
 }
 
-.dopol {
-    display: grid;
-    justify-content: center;
-}
-
 .main {
-    background-color: #A988F2;
-    width: 750px;
+    width: 850px;
     height: 700px;
     margin: auto;
-    border-radius: 15%;
-    border-color: black;
+    border-radius: 1%;
+    border: black solid 1px; 
     padding: 40px;
-}
-
-.buttons div, .dopol div {
-    display: flex;
-    padding: 15px;
-    margin: 10px;
-    font-size: x-large;
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-    border-radius: 50%;
-    cursor: pointer;
-    user-select: none;
-}
-
-.all-but {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    color:white;
-}
-
-.col1:hover {
-    background-color: #e5ebb8;
-}
-
-.col2:hover {
-    background-color:  #d9b9ae;
-}
-
-.numb:hover {
-    background-color: #8b57d3;
+    background-color: rgb(62, 62, 62);
 }
 
 .output-labels {
+    background-color:white;
     width: 90%;
     height: 75px;
     margin: auto;
-    border-radius: 10%;
     padding: 10px;
     color:wheat;
     display: flex;
     text-align: right;
     flex-direction: column;
 }
-.history {
-    width: 100%;
-    height: 25px;
-    margin: 5px;
-    background-color: wheat;
-    color: black;
-    padding-right: 5px;
-}
 
-.zero {
-    grid-area: zero;
-    width: 100%;
-    border-radius: 34px;
-}
-
-.numb {
-    background-color: #610BD9;
-}
-
-.col1 {
-    background-color: #E0F252; 
-    color: black;
-}
-
-.col2 {
-    background-color: #D9A38F;
-}
-
-.output{
-    width: 100%;
-    font-size: 34px;
-    background-color: white;
-    color: black;
-    margin: 5px;
-    padding-right: 5px;
-}
-
-
-/**/
 .conv {
     margin-left: 20%;
     display: flexbox;
 }
 
+/* Buttons*/
+.buttons div, .dopol div {
+    display: flex;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    border-radius: 10%;
+    cursor: pointer;
+    user-select: none;
+    transition-duration: 0.7s;
+}
+
+.all-but {
+    font-size: large;
+    padding-left: 3px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    color:white;
+}
+
+.col1:hover, .col2:hover, .conv button:hover {
+    background-color: #e5ebb8;
+}
+
+.numb:hover {
+    background-color: #8b57d3;
+}
+
+.numb {
+    background-color: #808080;
+    text-align: center;
+}
+
+.col1, .col2 {
+    background-color: #E0F252; 
+    color: black;
+    text-align: center;
+}
+
+.conv button {
+    transition-duration: 0.4s;
+    font-size: medium;
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #E0F252;
+    color: black;
+    border: 2px solid black;
+    padding: 5px; 
+}
+
+/* Output */
+.history {
+    width: 100%;
+    height: 25px;
+    margin: 5px;
+    color: black;
+    padding-right: 5px;
+}
+
+.output{
+    width: 100%;
+    font-size: 34px;
+    color: black;
+    margin: 5px;
+    padding-right: 5px;
+}
+
+/* Select mode*/
 select {
     appearance: none;
-    background-color: rgba(255, 255, 255, 0.517);
+    background-color: white;
     border: none;
     margin: 5px;
     width: 30%;
@@ -140,19 +139,6 @@ select {
     display: flexbox;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
-.conv button {
-    transition-duration: 0.4s;
-    font-size: medium;
-    margin: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #E0F252;
-    color: black;
-    border: 2px solid black; 
-}
-
-.conv button:hover {
-    background-color: rgb(0, 213, 255); 
-    color: black;
-}
